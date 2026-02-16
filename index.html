@@ -365,12 +365,12 @@
 
     if (leadForm) {
       leadForm.addEventListener("submit", async (e) => {
-        e.preventDefault();
+       
         if (leadStatus) leadStatus.textContent = "Sending...";
 
         try {
           const formData = new FormData(leadForm);
-          const res = await fetch(leadForm.action, {
+       
             method: "POST",
             body: formData,
             headers: { "Accept": "application/json" }
@@ -390,3 +390,4 @@
   </script>
 </body>
 </html>
+
