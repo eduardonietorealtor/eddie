@@ -37,7 +37,8 @@ Phone: ${phone}
 Need: ${need}
 Message: ${message}`;
 
-    window.location.href = `sms:+17076713252?body=${encodeURIComponent(textMessage)}`;
+    window.location.href = `sms:+17076713253?body=${encodeURIComponent(textMessage)}`;
   });
 }
+
 
