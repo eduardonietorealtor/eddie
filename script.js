@@ -19,3 +19,25 @@ if (toggle && menu) {
 
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
+// Text message form instead of email
+const form = document.getElementById("leadForm");
+
+if (form) {
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = form.querySelector('[name="name"]').value;
+    const phone = form.querySelector('[name="phone"]').value;
+    const need = form.querySelector('[name="need"]').value;
+    const message = form.querySelector('[name="message"]').value;
+
+    const textMessage = `New Request Call Back:
+Name: ${name}
+Phone: ${phone}
+Need: ${need}
+Message: ${message}`;
+
+    window.location.href = `sms:+17076713252?body=${encodeURIComponent(textMessage)}`;
+  });
+}
+
