@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Eduardo Nieto — local real estate help in Northern California. Buy, sell, invest. Fast responses and straightforward guidance." />
+  <meta property="og:title" content="Eduardo Nieto the Realtor" />
+  <meta property="og:description" content="Buy • Sell • Invest — Northern California real estate help." />
+  <meta property="og:type" content="website" />
+  <title>Eduardo Nieto the Realtor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <span class="brand__mark" aria-hidden="true">EN</span>
+        <span class="brand__text">
+          <span class="brand__name">Eduardo Nieto</span>
+          <span class="brand__tag">Realtor • Northern California</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+          <span class="sr">Menu</span>
+        </button>
+        <div class="nav__menu" id="navMenu">
+          <a href="#services">Services</a>
+          <a href="#listings">Listings</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact" class="btn btn--sm btn--ghost">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="pill">Buy • Sell • Invest</p>
+          <h1>Real estate, made simple.<br><span class="accent">Fast, local, and straight to the point.</span></h1>
+          <p class="lead">
+            I help clients across Northern California navigate buying, selling, and investment deals with clear communication and strong follow-through.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="tel:+17076713253">Call 707-671-3253</a>
+            <a class="btn btn--ghost" href="#contact">Get a quick estimate</a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trustCard">
+              <div class="trustCard__title">Quick responses</div>
+              <div class="trustCard__text">Same-day follow up whenever possible.</div>
+            </div>
+            <div class="trustCard">
+              <div class="trustCard__title">Clear strategy</div>
+              <div class="trustCard__text">Pricing, prep, and negotiation — no fluff.</div>
+            </div>
+            <div class="trustCard">
+              <div class="trustCard__title">Local network</div>
+              <div class="trustCard__text">Lenders, inspectors, contractors, escrow.</div>
+            </div>
+          </div>
+
+          <p class="fineprint">
+            DRE#02141771 • Brokerage: eXp Realty of California (add your office info if you want).
+          </p>
+        </div>
+
+        <div class="hero__card" aria-label="Quick contact card">
+          <div class="card">
+            <h2>Request a call back</h2>
+            <p class="muted">Send a quick message — I’ll reach out.</p>
+
+            <!-- This form uses mailto by default. Swap to Google Form or Cloudflare Worker later -->
+            <form id="leadForm" class="form" action="mailto:eduardonietorealtor@gmail.com" method="post" enctype="text/plain">
+              <label>
+                Name
+                <input name="name" autocomplete="name" required placeholder="Your name" />
+              </label>
+
+              <label>
+                Phone
+                <input name="phone" autocomplete="tel" required placeholder="(707) 555-1234" />
+              </label>
+
+              <label>
+                What do you need?
+                <select name="need" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Sell my home</option>
+                  <option>Buy a home</option>
+                  <option>Cash offer / investor</option>
+                  <option>Property value estimate</option>
+                  <option>Other</option>
+                </select>
+              </label>
+
+              <label>
+                Message (optional)
+                <textarea name="message" rows="3" placeholder="Tell me the city, timeline, and anything important."></textarea>
+              </label>
+
+              <button class="btn btn--block" type="submit">Send</button>
+
+              <p class="tiny muted">
+                Prefer texting? <a href="sms:+17076713253">Tap to text</a>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>How I help</h2>
+          <p class="muted">A simple plan that works whether you’re buying, selling, or investing.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="feature">
+            <h3>Sellers</h3>
+            <p>Pricing strategy, prep checklist, photos, marketing, and negotiation to maximize your net.</p>
+            <ul class="bullets">
+              <li>Market analysis</li>
+              <li>Repair / prep guidance</li>
+              <li>Offer review + negotiation</li>
+            </ul>
+          </article>
+
+          <article class="feature">
+            <h3>Buyers</h3>
+            <p>Tour scheduling, offer strategy, and clean timelines so you feel confident the whole way.</p>
+            <ul class="bullets">
+              <li>Tour plan + shortlists</li>
+              <li>Strong offer writing</li>
+              <li>Inspection & closing support</li>
+            </ul>
+          </article>
+
+          <article class="feature">
+            <h3>Investors</h3>
+            <p>Deal analysis, repair awareness, and a straight answer on what’s worth your time.</p>
+            <ul class="bullets">
+              <li>Cash offers</li>
+              <li>Value-add opportunities</li>
+              <li>Rental / resale considerations</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="ctaStrip">
+          <div>
+            <h3>Want a quick property value estimate?</h3>
+            <p class="muted">Tell me the address & condition — I’ll send a realistic range.</p>
+          </div>
+          <a class="btn" href="#contact">Request estimate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTINGS -->
+    <section id="listings" class="section section--alt">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Featured homes</h2>
+          <p class="muted">Replace these cards with your current listings or link to your MLS/IDX page.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="listing">
+            <div class="listing__img" role="img" aria-label="Home exterior placeholder"></div>
+            <div class="listing__body">
+              <h3>Example Listing #1</h3>
+              <p class="muted">City, CA • 3 bed • 2 bath • 1,450 sq ft</p>
+              <a class="link" href="#contact">Ask about this home →</a>
+            </div>
+          </article>
+
+          <article class="listing">
+            <div class="listing__img" role="img" aria-label="Home exterior placeholder"></div>
+            <div class="listing__body">
+              <h3>Example Listing #2</h3>
+              <p class="muted">City, CA • 2 bed • 1 bath • Large lot</p>
+              <a class="link" href="#contact">Schedule a tour →</a>
+            </div>
+          </article>
+
+          <article class="listing">
+            <div class="listing__img" role="img" aria-label="Home exterior placeholder"></div>
+            <div class="listing__body">
+              <h3>Example Listing #3</h3>
+              <p class="muted">City, CA • Investment opportunity</p>
+              <a class="link" href="#contact">Get details →</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="tiny muted">
+          Pro tip: If you later want IDX/MLS search, we can embed your provider or link out to your eXp/agent site.
+        </p>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Client words</h2>
+          <p class="muted">Swap these with real reviews anytime.</p>
+        </div>
+
+        <div class="grid3">
+          <figure class="quote">
+            <blockquote>“Eduardo was fast, honest, and kept everything moving. No confusion, just results.”</blockquote>
+            <figcaption>— Buyer client</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“We got clear guidance on repairs and pricing. The plan made sense and the sale went smooth.”</blockquote>
+            <figcaption>— Seller client</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“Straight shooter. Helped me evaluate the deal quickly and avoid wasting time.”</blockquote>
+            <figcaption>— Investor</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>FAQ</h2>
+          <p class="muted">Quick answers to common questions.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>How do you price a home?</summary>
+            <div class="faq__body">
+              I combine recent comps, active competition, and your home’s condition to land on a price that attracts strong buyers without leaving money on the table.
+            </div>
+          </details>
+
+          <details>
+            <summary>Do you work with cash buyers?</summary>
+            <div class="faq__body">
+              Yes — I can help you evaluate a cash offer, compare it to listing, and choose the best path for your goals and timeline.
+            </div>
+          </details>
+
+          <details>
+            <summary>What areas do you cover?</summary>
+            <div class="faq__body">
+              Northern California — tell me the city and I’ll confirm local market details and options.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div class="contact__info">
+          <h2>Let’s talk</h2>
+          <p class="lead">Call or text, or send a message and I’ll reach out.</p>
+
+          <div class="contact__cards">
+            <a class="contactCard" href="tel:+17076713253">
+              <div class="contactCard__title">Call</div>
+              <div class="contactCard__text">707-671-3253</div>
+            </a>
+            <a class="contactCard" href="sms:+17076713253">
+              <div class="contactCard__title">Text</div>
+              <div class="contactCard__text">Tap to message</div>
+            </a>
+            <a class="contactCard" href="mailto:eduardonietorealtor@gmail.com">
+              <div class="contactCard__title">Email</div>
+              <div class="contactCard__text">eduardonietorealtor@gmail.com</div>
+            </a>
+          </div>
+
+          <p class="tiny muted">
+            Add your office address / brokerage disclosure here if you want it displayed.
+          </p>
+        </div>
+
+        <div class="contact__form card">
+          <h3>Quick message</h3>
+          <form class="form" action="mailto:eduardonietorealtor@gmail.com" method="post" enctype="text/plain">
+            <label>
+              Name
+              <input name="name" required placeholder="Your name" />
+            </label>
+            <label>
+              Phone
+              <input name="phone" required placeholder="Your phone" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required placeholder="City + timeline + what you’re looking for"></textarea>
+            </label>
+            <button class="btn btn--block" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Eduardo Nieto the Realtor</div>
+        <div class="tiny muted">DRE#02141771 • © <span id="year"></span></div>
+      </div>
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#listings">Listings</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
